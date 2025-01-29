@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="PS_First::css/styles.css" media="all"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="ps_first_first" template="PS_First::first.phtml">
+                <arguments>
+                    <argument name="first_block" xsi:type="object">
+                        PS\First\Block\First
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

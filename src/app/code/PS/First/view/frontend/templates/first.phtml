@@ -1,0 +1,166 @@
+<h1>Hello, World!</h1>
+
+<?php
+
+/** @var \PS\First\Block\First $welcomeMessageViewModel */
+/** @var \Magento\Framework\View\Element\Template $block */
+$welcomeMessageViewModel = $block->getData('first_block');
+
+?>
+
+<h1 class="helloworld-message"><?= $welcomeMessageViewModel->getHelloMessage(); ?></h1>
+
+<div data-mage-init='{ "first": {} }'></div>
+
+<header class="navbar">
+    <!-- Logo -->
+    <svg class="h-6 tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="var(--tds-icon--fill, #171a20)"/></svg>
+
+    <!-- Nav Links -->
+    <div class="hidden lg:block">
+      <a href="#modelS" class="nav_link">Model
+        S</a>
+      <a href="#model3" class="nav_link">Model 3</a>
+      <a href="#modelX" class="nav_link">Model X</a>
+      <a href="#modelY" class="nav_link">Model Y</a>
+      <a href="#solarRoof" class="nav_link">Solar Roof</a>
+      <a href="#solarPanels" class="nav_link">Solar Panels</a>
+    </div>
+    <!-- Ext Links -->
+    <div>
+      <a href="#shop" class="nav_link hidden lg:inline-block">Shop</a>
+      <a href="#account" class="nav_link hidden lg:inline-block">Account</a>
+      <a href="#menu" class="nav_link lg:inline-block">Menu</a>
+    </div>
+  </header>
+
+<section id="modelS" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/ModelS.jfif'); ?>" alt="Model S Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Model S</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+    <a href="#model3">
+      <svg class="down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+  <!-- Model S Section End -->
+
+  <!-- Model 3 Section Start -->
+  <section id="model3" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/Model3.jfif'); ?>"  alt="Model 3 Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Model 3</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+    <a href="#modelX">
+      <svg class="down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+  <!-- Model 3 Section End -->
+
+  <!-- Model X Section Start -->
+  <section id="modelX" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/ModelX.jfif'); ?>" alt="ModelX Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Model X</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+    <a href="#modelY">
+      <svg class="down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+  <!-- Model X Section End -->
+
+  <!-- Model Y Section Start -->
+  <section id="modelY" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/ModelY.jfif'); ?>" alt="Model Y Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Model Y</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+    <a href="#solarRoof">
+      <svg class="down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+  <!-- Model Y Section End -->
+
+  <!-- Solar Roof Section Start -->
+  <section id="solarRoof" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/SolarRoof.jfif'); ?>" alt="Solar Roof Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Solar Roof</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+    <a href="#solarPanels">
+      <svg class="down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+  <!-- Solar Roof Section End -->
+
+  <!-- Solar Panels Section Start -->
+  <section id="solarPanels" class="car_section">
+    <img src="<?php echo $this->getViewFileUrl('PS_First::images/SolarPanels.jfif'); ?>" alt="Solar Panels Image" class="car_img">
+
+    <div class='car_details transform_50'>
+      <h1 class="model_name">Solar Panels</h1>
+      <h2 class="tag_line">Order Online for <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+
+    <div class="car_buttons transform_50">
+      <button class="btn">Custom Order</button>
+      <button class="btn inventory">Existing Inventory</button>
+    </div>
+
+  </section>
+  <!-- Solar Panels Section End -->
